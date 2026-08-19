@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Login akun SegarMart"
+    >
+
+    <title>
+        Login | SegarMart
+    </title>
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body class="auth-page">
+
+
+<!-- ==================================================
+     LOGIN
+================================================== -->
+
+<main class="auth-container">
+
+
+    <div class="auth-card">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="auth-logo"
+        >
+
+            🥬 SegarMart
+
+        </a>
+
+
+        <!-- TITLE -->
+
+        <h1>
+            Selamat Datang
+        </h1>
+
+
+        <p class="auth-subtitle">
+
+            Login untuk melanjutkan
+            belanja di SegarMart.
+
+        </p>
+
+
+        <!-- LOGIN FORM -->
+
+        <form
+            id="loginForm"
+            novalidate
+        >
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+
+                <label for="loginEmail">
+
+                    Email
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    name="email"
+                    placeholder="Masukkan email"
+                    autocomplete="email"
+                    required
+                >
+
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+
+                <label for="loginPassword">
+
+                    Password
+
+                </label>
+
+
+                <div class="password-wrapper">
+
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="password"
+                        placeholder="Masukkan password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="toggle-password"
+                        aria-label="Tampilkan password"
+                    >
+
+                        👁️
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FORGOT PASSWORD -->
+
+            <div class="forgot-password">
+
+
+                <a href="forgot-password.html">
+
+                    Lupa password?
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                id="loginButton"
+                class="btn btn-primary auth-submit"
+            >
+
+                LOGIN
+
+            </button>
+
+
+
+            <!-- LOADING -->
+
+            <div
+                id="loginLoading"
+                class="auth-loading"
+                hidden
+            >
+
+                Memproses login...
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="loginMessage"
+                class="auth-message"
+                role="alert"
+            ></div>
+
+
+        </form>
+
+
+
+        <!-- REGISTER -->
+
+        <div class="auth-switch">
+
+
+            <span>
+                Belum punya akun?
+            </span>
+
+
+            <a href="register.html">
+
+                Daftar sekarang
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- BACK -->
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+
+            ← Kembali ke Beranda
+
+        </a>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     SUPABASE
+================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+></script>
+
+
+<!-- ==================================================
+     AUTH JAVASCRIPT
+================================================== -->
+
+<script
+    src="js/auth.js"
+></script>
+
+
+</body>
+
+</html>
